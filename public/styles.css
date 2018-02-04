@@ -10,3 +10,91 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+header {
+  background-image: url("header.jpg");
+  background-size: cover;
+  height: 20em;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+header h1 {
+  margin: auto;
+  color: #eee;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: 'Lora', serif;
+}
+
+h1,h2,h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+main {
+  padding: 0 1em;
+}
+
+img {
+  max-width: 100%;
+  display:block;
+}
+
+.articles {
+  display: flex;
+  flex:1;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article {
+  max-width: 21em;
+  margin: 1em 0.6em;
+}
+
+.da{
+  background: #666;
+  height: 14em;
+  width: 21em;
+}
+
+.article__imageContainer {
+  min-height: 14em;
+  min-width: 21em;
+  margin-bottom: 0.2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.errorText {
+  text-align: center;
+}
+
+.back {
+  text-align: center;
+}

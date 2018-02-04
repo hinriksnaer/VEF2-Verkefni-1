@@ -1,0 +1,20 @@
+<%- include('header') -%>
+<main class = 'articles'> 
+ <% for(var i=0; i < articleTitle.length; i++) {%>
+    <div class = 'article'> 
+        <a href = '<%=articleSlug[i]%>'>
+    <div class = 'article__imageContainer'>
+    <%if (articleImg[i]) {%>
+        <img src='<%=articleImg[i]%>' alt='mynd fyrir grein'>
+    <%} else {%>
+        <div class="da"></div>
+        <% } %>
+    </div>
+  <h3><%=articleTitle[i]%></h3>
+  <p><%=articleDate[i]%></p>
+        </a>
+    </div>
+<%}%>
+</main>
+
+<%- include('footer') -%>
